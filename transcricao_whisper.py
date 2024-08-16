@@ -33,7 +33,7 @@ def transcrever_audio():
             segmento.export(segmento_path, format="wav")
             
             # Comando Whisper para o segmento
-            comando = ["/home/lorenzzo/GitHub/audio_transcription/venv/bin/python", "-m", "whisper", segmento_path, "--language", "Portuguese", "--model", "small", "--output_format", "txt", "--output_dir", nome_pasta]
+            comando = ["path/venv/bin/python", "-m", "whisper", segmento_path, "--language", "Portuguese", "--model", "small", "--output_format", "txt", "--output_dir", nome_pasta]
             
             # Executar o comando
             subprocess.run(comando)
