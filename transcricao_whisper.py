@@ -1,6 +1,6 @@
 import subprocess
 import tkinter as tk
-from tkinter import filedialog, Text
+from tkinter import filedialog, Text, StringVar, OptionMenu
 from pydub import AudioSegment
 
 def dividir_audio(caminho_audio, duracao_segmento=30000):  # 30 segundos por segmento
